@@ -1,0 +1,2 @@
+resolucion de las imagenes para el carousell:
+500*500
