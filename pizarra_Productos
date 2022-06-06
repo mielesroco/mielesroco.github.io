@@ -1,0 +1,51 @@
+Pizarra Mieles Roco Productos:
+-Productos Card
+
+
+-----------DESARROLLO----------------
+
+
+1-Producto 1:
+
+	<div class="card" style="width: 18rem;">
+	  <img class="card-img-top" src="..." alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">Card title</h5>
+	    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	    <a href="#" class="btn btn-primary">Go somewhere</a>
+	  </div>
+	</div>
+
+		2-Producto 2:
+
+			<div class="card" style="width: 18rem;">
+			  <img class="card-img-top" src="..." alt="Card image cap">
+			  <div class="card-body">
+			    <h5 class="card-title">Card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Go somewhere</a>
+			  </div>
+			</div>
+
+				3-Producto 3:
+
+					<div class="card" style="width: 18rem;">
+					  <img class="card-img-top" src="..." alt="Card image cap">
+					  <div class="card-body">
+					    <h5 class="card-title">Card title</h5>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    <a href="#" class="btn btn-primary">Go somewhere</a>
+					  </div>
+					</div>
+
+						4-Producto 4:
+
+							<div class="card" style="width: 18rem;">
+							  <img class="card-img-top" src="..." alt="Card image cap">
+							  <div class="card-body">
+							    <h5 class="card-title">Card title</h5>
+							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							    <a href="#" class="btn btn-primary">Go somewhere</a>
+							  </div>
+							</div>
+
