@@ -16,41 +16,60 @@
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700,800i" rel="stylesheet">
 </head>
 <body>
- <!-- The overlay -->
-<div id="myNav" class="overlay">
+<!-- ===============================================-->
+<!--   Color de fondo de la pagina-->
+<!-- ===============================================-->
+   
+   <body style="background-color:#ffc900;">
 
-  <!-- Button to close the overlay navigation -->
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<!-- ===============================================-->
+<!--   Nav 2.0-->
+<!-- ===============================================-->	
 
-  <!-- Overlay content -->
-  <div class="overlay-content">
-    <a href="../index.html">Home</a>
-    <a href="../productos.html">Productos</a>
-    <a href="../galeria.html">Galeria</a>
-    <a href="../contactenos.html">Contactenos</a>
-  </div>
+	<!-- Contenido del Nav -->
 
-</div>
-<!-- Boton que abre el menu extensible para Mieles Roco   -->
-<!-- Use any element to open/show the overlay navigation menu -->
-<button type="button" class="btn btn-warning"><span onclick="openNav()">Haga Clic Aqui para Desplegar</span> 
+		 <!-- The overlay -->
+		<div id="myNav" class="overlay">
 
-</button>
-  <script type="text/javascript">
-  	
-  	/* Open when someone clicks on the span element */
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
+		  <!-- Button to close the overlay navigation -->
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-} 
+		  <!-- Overlay content -->
+		  <div class="overlay-content">
+		    <a href="../index.html"><img src="../imgs/iconos/home.svg" alt="Home"width="24" height="24">Home</a>
+		    <a href="../productos.html"><img src="../imgs/iconos/honey(2).png" alt="Products"width="24" height="24">Productos</a>
+		    <a href="../galeria.html"><img src="../imgs/iconos/honey(1).png" alt="Galery"width="24" height="24">Galeria</a>
+		    <a href="../contactenos.html"><img src="../imgs/iconos/camarero.png" alt="Contact_us"width="24" height="24">Contactenos</a>
+		  </div>
+
+		</div>
+
+	<!-- Boton que abre el menu extensible para Mieles Roco   -->
+
+		<!-- Use any element to open/show the overlay navigation menu -->
+	
+		<div class="row d-flex justify-content-center align-content-center">
+		<button type="button" class="btn btn-warning "><span onclick="openNav()"> 🐝Menu Mieles Roco 🐝</span> 
+
+		</button>
+		</div>
+
+	<!-- Javascript content -->
+		  <script type="text/javascript">
+		  	
+		  	/* Open when someone clicks on the span element */
+		function openNav() {
+		  document.getElementById("myNav").style.width = "100%";
+		}
+
+		/* Close when someone clicks on the "x" symbol inside the overlay */
+		function closeNav() {
+		  document.getElementById("myNav").style.width = "0%";
+		} 
 
 
 
-  </script>
+		  </script>
 
 
 
