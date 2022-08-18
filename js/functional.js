@@ -1,4 +1,3 @@
-
 let numContainer = document.getElementById('num');
 let value = 0;
 let btnInc = document.querySelector('.inc');
