@@ -90,7 +90,75 @@
             </div>
         </div>
 
-
+<section id="sect">
+        <div class="midl">
+            <div>
+                <h1>Contador de click sobre un boton</h1>
+            </div>
+            <button id="btnClick">Cuenta</button>
+            <button id="btnClear">Reset</button>
+            <p id="contarClick"></p>
+        </div>
+    </section>
+    <style>
+        h1{text-align: center;font-size: 45px;text-shadow: 0 1px white;}
+        section{
+            text-align: center;
+            margin: auto;
+            padding: 350px 0;
+            transition: all .5s;
+        }
+        button{
+            border: none;
+            background-color: tomato;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 800;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: brown;
+        }
+        #contarClick{
+            font-size: 85px;
+            font-weight: 800;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 20px auto;
+            background-color: aliceblue;
+            width: fit-content;
+            padding: 15px 40px;
+            border-radius: 50%;
+        }
+    </style>
+    <script type="text/javascript">
+        
+        var btnElm = document.getElementById('btnClick'),
+            btnClear = document.getElementById('btnClear'),
+            pElm = document.getElementById('contarClick')
+            sect = document.getElementById('sect'),
+            contar = 0;
+        
+        const sbg = function(){
+            const randColor = Math.floor(Math.random() * 16777215).toString(16);
+            sect.style.backgroundColor = "#" + randColor;
+        }
+        
+        pElm.textContent = 0;
+        
+        btnElm.onclick = function(){
+            contar++;
+            pElm.textContent = contar;
+            sbg();
+        }
+        
+        btnClear.onclick = function(){
+            pElm.textContent = 0;
+            contar = 0;
+            sect.style.backgroundColor = "white";
+        }
+    </script>
 
 </body>
 </html>
