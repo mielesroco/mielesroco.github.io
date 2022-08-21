@@ -1,9 +1,3 @@
-<?php
-# Incluir el contador de visitas
-include_once "contador_de_visita.php";
-?>
-
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -73,8 +67,13 @@ include_once "contador_de_visita.php";
  añadir la url al boton 
  hacer que te mande a la conversacion por instagram
 
-
- -POR CADA CLICK EN ENCARGAR AUMENTA UN REVIEW
+-contador en el review  que aumente por cada visita
+-añadir el boton con conexion al instagram v.1.0
+-añadir el boton con conexion al wsp v.2.0
+-actualizar la descripcion del producto
+-ingresar o actualizar el apartado de los votos** para la v.2.0
+-
+ 
   -->
 <!-- ===============================================-->
     <div class="container">
@@ -83,45 +82,86 @@ include_once "contador_de_visita.php";
                 <div class="wrapper row">
                     <div class="preview col-md-6">            
                         <div class="preview-pic tab-content">
+                            <!-- ===============================================-->
+                            <!-- ============= Portada del Producto=================-->
+                            <!-- ===============================================-->
                           <div class="tab-pane active" id="pic-1"><img src="../imgs/Productos/Mieles_front_logo.jfif" width="491" height="491"/></div>
+                          <!-- ===============================================-->
+                          <!-- =============Foto nro 2 del Producto=================-->
+                          <!-- ===============================================-->
                           <div class="tab-pane" id="pic-2"><img src="../imgs/Productos/Miel_250_ulmo.jfif" width="491" height="491"/></div>
+                          <!-- ===============================================-->
+                          <!-- =============Foto nro 3 del Producto=================-->
+                          <!-- ===============================================-->
                           <div class="tab-pane" id="pic-3"><img src="../imgs/Productos/miel_250_avellana.jfif"  width="491" height="491"/></div>
+                          <!-- ===============================================-->
+                          <!-- =============Foto nro 4 del Producto=================-->
+                          <!-- ===============================================-->
                           <div class="tab-pane" id="pic-4"><img src="../imgs/Productos/Miel_250_normal.jfif" width="491" height="491" /></div>
+                          <!-- ===============================================-->
+                          <!-- =============Foto nro 5 del Producto=================-->
+                          <!-- ===============================================-->
                           <div class="tab-pane" id="pic-5"><img src="../imgs/Productos/Mieles_prod1_250_gr.jpg" width="491" height="491" /></div>
                         </div>
                         <ul class="preview-thumbnail nav nav-tabs">
+                           <!-- ===============================================-->
+                          <!-- ============= Preview Foto nro 1 del Producto=================-->
+                          <!-- ===============================================--> 
                           <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="../imgs/Productos/Miel_250_normal.jfif"/></a></li>
+                          <!-- ===============================================-->
+                          <!-- ============= Preview Foto nro 2 del Producto=================-->
+                          <!-- ===============================================--> 
                           <li><a data-target="#pic-2" data-toggle="tab"><img src="../imgs/Productos/Miel_250_ulmo.jfif" /></a></li>
+                          <!-- ===============================================-->
+                          <!-- ============= Preview Foto nro 3 del Producto=================-->
+                          <!-- ===============================================--> 
                           <li><a data-target="#pic-3" data-toggle="tab"><img src="../imgs/Productos/miel_250_avellana.jfif" /></a></li>
+                          <!-- ===============================================-->
+                          <!-- ============= Preview Foto nro 4 del Producto=================-->
+                          <!-- ===============================================--> 
                           <li><a data-target="#pic-4" data-toggle="tab"><img src="../imgs/Productos/Mieles_front_logo.jfif   " /></a></li>
+                          <!-- ===============================================-->
+                          <!-- ============= Preview Foto nro 5 del Producto=================-->
+                          <!-- ===============================================--> 
                           <li><a data-target="#pic-5" data-toggle="tab"><img src="../imgs/Productos/Mieles_prod1_250_gr.jpg"  width="87.45" height="58.2667"/></a></li>
                         </ul>
     
                     </div>
+                    <!-- ===============================================-->
+                    <!-- =============Detalles del Producto=================-->
+                    <!-- ===============================================-->
                     <div class="details col-md-6">
                         <h3 class="product-title">Miel de 250 G.</h3>
                         <div class="rating">
-                            <div class="stars">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
                             <span class="review-no">21 reviews</span>
                         </div>
+                        <!-- ===============================================-->
+                        <!-- =============Descripcion del Producto=================-->
+                        <!-- ===============================================-->
                         <p class="product-description">
                         <span class="nutritional-title-detail">Porción:</span><span>1 Cucharadita (10 g)</span></br>  
                         <span class="nutritional-title-detail">Pote:</span>
                         <span>25 Cucharaditas (250 g)</span>                   
                         </p>
+                        <!-- ===============================================-->
+                        <!-- =============Precio Actual del Producto=================-->
+                        <!-- ===============================================-->
                         <h4 class="price">Precio Actual: <span>$2.500 CLP</span></h4>
+                        <!-- ===============================================-->
+                        <!-- =============Votos del Producto=================-->
+                        <!-- ===============================================-->
                         <p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
+                        <!-- ===============================================-->
+                        <!-- =============Tipos del Producto=================-->
+                        <!-- ===============================================-->
                         <h5 class="sizes">Tipos:
                             <span class="size" data-toggle="tooltip" title="Organica">Organica</span>
                             <span class="size" data-toggle="tooltip" title="Avellana">Avellana</span>
                         </h5>
-                        <h5 class="colors">Disponibilidad de Entrega:
+                        <!-- ===============================================-->
+                        <!-- =============Tipos de Entregas del Producto=================-->
+                        <!-- ===============================================-->
+                        <h5 class="colors">Tipos de Entrega:
                             <span class="Metro">
                             <img src="../imgs/iconos/Metro.png" alt="Metro"width="24" height="24" tittle="Metro" ></span>
                             <span class="Starken">
@@ -129,6 +169,9 @@ include_once "contador_de_visita.php";
 
                             </span>
                         </h5>
+                        <!-- ===============================================-->
+                        <!-- =============Boton del Producto=================-->
+                        <!-- ===============================================-->
                         <div class="action">
                             <button class="add-to-cart btn btn-default inc" type="button" href="https://www.instagram.com/mielesroco/">Encargar <img src="../imgs/iconos/bees.png" alt="Bees"width="24" height="24" tittle="bees " Alt="Starken" ></button>
                         </div>
@@ -142,9 +185,15 @@ include_once "contador_de_visita.php";
 
 
 <!-- Producto 2 -->
-<!-- Le  falta actualizar:
-    -Links
--->
+<!-- Le  falta :
+
+-Separar y ordenar el producto como se hace arriba
+-contador en el review  que aumente por cada visita
+-borrar la barra de estrellas de rating que no se usa ni se muestra
+-añadir el boton con conexion al instagram v.1.0
+-añadir el boton con conexion al wsp v.2.0
+ 
+  -->
 <!-- ===============================================-->
     <div class="container">
         <div class="card">
