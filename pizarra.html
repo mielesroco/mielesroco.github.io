@@ -48,11 +48,16 @@
 
 		<!-- Use any element to open/show the overlay navigation menu -->
 	
-		<div class="row d-flex justify-content-center align-content-center align-items-center">
+		<div class="row d-flex justify-content-center align-content-center align-items-center ar1">
 		<button type="button" class="btn btn-warning "><span onclick="openNav()"> 🐝Menu Mieles Roco 🐝</span> 
 
 		</button>
 		</div>
+
+		<style>
+		        .ar1{text-align: center;font-size: 45px;text-shadow: 0 1px white;}
+		</style>
+
 
 	<!-- Javascript content -->
 		  <script type="text/javascript">
@@ -81,14 +86,6 @@
 -->
 <!-- ===============================================-->
 
-    <div class="containerA">
-            <h1 id="num">0</h1>
-            <div class="btnsA">
-                <button class="dec">-</button>
-                <button class="reset">Reset</button>
-                <button class="inc">+</button>
-            </div>
-        </div>
 
 <section id="sect">
         <div class="midl">
@@ -100,6 +97,9 @@
             <p id="contarClick"></p>
         </div>
     </section>
+
+
+
     <style>
         h1{text-align: center;font-size: 45px;text-shadow: 0 1px white;}
         section{
@@ -132,33 +132,12 @@
             border-radius: 50%;
         }
     </style>
-    <script type="text/javascript">
-        
-        var btnElm = document.getElementById('btnClick'),
-            btnClear = document.getElementById('btnClear'),
-            pElm = document.getElementById('contarClick')
-            sect = document.getElementById('sect'),
-            contar = 0;
-        
-        const sbg = function(){
-            const randColor = Math.floor(Math.random() * 16777215).toString(16);
-            sect.style.backgroundColor = "#" + randColor;
-        }
-        
-        pElm.textContent = 0;
-        
-        btnElm.onclick = function(){
-            contar++;
-            pElm.textContent = contar;
-            sbg();
-        }
-        
-        btnClear.onclick = function(){
-            pElm.textContent = 0;
-            contar = 0;
-            sect.style.backgroundColor = "white";
-        }
-    </script>
+
+<!-- ===============================================-->
+<!--    J S -->
+<!-- ===============================================-->
+
+	<script src="../js/functional.js"></script>
 
 </body>
 </html>
