@@ -21,7 +21,7 @@
 <!-- ===============================================-->
    
    <body style="background-color:#ffc900;">
-   <script src="../js/functional.js"></script>
+   
 <!-- ===============================================-->
 <!--   Nav 2.0-->
 <!-- ===============================================-->	
@@ -140,6 +140,7 @@
             sect = document.getElementById('sect'),
             contar = 0;
         
+
         const sbg = function(){
             const randColor = Math.floor(Math.random() * 16777215).toString(16);
             sect.style.backgroundColor = "#ffc900;"
@@ -150,16 +151,19 @@
         
         btnElm.onclick = function(){
             contar++;
-            pElm.textContent = contar;
-            functional.contar();
             sbg();
         }
         
+
         btnClear.onclick = function(){
             pElm.textContent = 0;
             contar = 0;
             sect.style.backgroundColor = "#ffc900;"
         }
+
+        localStorage.setItem("visitas", Number(localStorage.getItem("visitas")) + 1)
+    
+        console.log(localStorage.getItem("visitas"))
     </script>
 
 
