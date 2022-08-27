@@ -89,7 +89,7 @@
 <section id="sect">
         <div class="midl">
             <div>
-                <texto-contador>Contador de click sobre un boton</texto-contador>
+                <texto-contador>Contador de click sobre un boton </texto-contador>
             </div>
             <button id="btnClick" href="https://www.instagram.com/mielesroco/"> Encargar 
                              <img src="../imgs/iconos/bees.png" alt="Bees"width="24" height="24" tittle="bees " Alt="Starken" ></button>
@@ -98,6 +98,8 @@
         </div>
     </section>
 
+
+<button id="tal">click</button>
 
     
     <style>
@@ -164,6 +166,14 @@
         localStorage.setItem("visitas", Number(localStorage.getItem("visitas")) + 1)
     
         console.log(localStorage.getItem("visitas"))
+
+        function contador(){
+          n = 0;
+          return ()=> console.info( ++n)
+
+        }
+        $btn = document.getElementById('tal');
+        $btn.addEventListener("click", contador())
     </script>
 
 
