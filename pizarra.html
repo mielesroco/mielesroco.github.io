@@ -78,26 +78,25 @@
 
 
 
-
-<!-- Contador -->
-<!-- Le  falta actualizar:
-    -Links
--->
+<!-- ===============================================-->
+<!-- ===============================================-->
+<!--   Contador-->
 <!-- ===============================================-->
 
-
-<section id="sect">
-        <div class="midl">
-            <div>
-                <h1>Contador de click sobre un boton</h1>
+    <section id="sect">
+            <div class="midl">
+                <div>
+                    <h1>Contador de click sobre un boton</h1>
+                </div>
+                <button id="btnClick">Cuenta</button>
+                <button id="btnClear">Reset</button>
+                <p id="contarClick"></p>
             </div>
-            <button id="btnClick">Cuenta</button>
-            <button id="btnClear">Reset</button>
-            <p id="contarClick"></p>
-        </div>
-    </section>
+        </section>
 
-
+<!-- ===============================================-->
+<!--   Style css del contador-->
+<!-- ===============================================-->
     
     <style>
         h1{text-align: center;font-size: 45px;text-shadow: 0 1px white;}
@@ -131,6 +130,9 @@
             border-radius: 50%;
         }
     </style>
+<!-- ===============================================-->
+<!--   Javascript del contador -->
+<!-- ===============================================-->
     <script type="text/javascript">
         
         var btnElm = document.getElementById('btnClick'),
@@ -140,8 +142,8 @@
             contar = 0;
         
         const sbg = function(){
-            const randColor = Math.floor(Math.random() * 16777215).toString(16);
-            sect.style.backgroundColor = "#" + randColor;
+            
+            sect.style.backgroundColor =#ffc900;
         }
         
         pElm.textContent = 0;
@@ -158,6 +160,16 @@
             sect.style.backgroundColor = "white";
         }
     </script>
+<!-- ===============================================-->
+<!--   -->
+<!-- ===============================================-->
+
+
+
+
 
 </body>
 </html>
+<!-- ===============================================-->
+<!--   fin del html-->
+<!-- ===============================================-->
